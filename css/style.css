@@ -5,90 +5,41 @@
 }
 
 body {
-  font-family: 'Quattrocento', serif;
+
 }
+/* splash scree */
 
-.img-center {
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-  /* padding: 2rem 0 ; */
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-
-/* Le damos position relatie para que los elementos de los iconos tenga como referencia a este contenedor , al darle position absolute */
-
-.slideshow {
-  position: relative;
-  width: 100%;
-}
-
-.slide-img {
-  width: 100%;
-}
-
-.image-center {
-  width: 100%;
-}
-
-.slide-img-list .caption-text {
-  position: absolute;
-  top:0px;
-  left:0;
-  width:100%;
-  height: 100%;
-  padding: 15px 50px;
-  color: #000000;
+.flexbox-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
   align-items: center;
-  text-align: center;
-  z-index: 1;
-  font-size: 2.2em;
 }
 
-/* .caption-text h1{
-    font-size: 2em;
-} */
-
-.pagination {
-  position: absolute;
-  top: 102%;
+.container-flex-column {
   display: flex;
+	flex-direction:column;
   justify-content: center;
-  width: 100%;
+	padding: 2em;
 }
 
-.pagination li{
-  font-size: 2em;
-  margin: 2px 5px;
-  color: #858585;
+.vh100 {
+	height: 100vh;
+}
+
+.loader-color{
+  background: linear-gradient(to top, #aa076b, #61045f);
+}
+
+/* main section(choose-action)*/
+
+
+.btn-success {
+	padding: 0.5em;
+	margin-bottom: 3em;
 }
 
 
-.iconarrow-left,
-.iconarrow-right {
-  position: absolute;
-  top:0;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: rgb(255, 253, 253);
-  font-size: 2.5em;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.iconarrow-left{
-  left: 10px;
-}
-
-.iconarrow-right{
-    right: 10px;
-}
