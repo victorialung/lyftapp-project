@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
+body {}
 
-}
+
 /* splash scree */
 
 .flexbox-container {
@@ -21,25 +21,31 @@ body {
 
 .container-flex-column {
   display: flex;
-	flex-direction:column;
+  flex-direction: column;
   justify-content: center;
-	padding: 2em;
+  padding: 2em;
 }
 
 .vh100 {
-	height: 100vh;
+  height: 100vh;
 }
 
-.loader-color{
+.loader-color {
   background: linear-gradient(to top, #aa076b, #61045f);
 }
 
+
 /* main section(choose-action)*/
 
-
-.btn-success {
-	padding: 0.5em;
-	margin-bottom: 3em;
+.main-background {
+  background: url(../assets/img/img-1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
 }
 
-
+.btn-light {
+  border-color: transparent !important;
+}
