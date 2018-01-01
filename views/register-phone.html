@@ -6,27 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Lyft App</title>
-  <link rel="shortcut icon" href="assets/img/favicon.png" />
+  <link rel="shortcut icon" href="../assets/img/favicon.png" />
 </head>
 
-<body class=" container-flex-column vh100 loader-color flexbox-container">
-  <!-- Star splash screen-->
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 ">
-        <img class="img-responsive logo img-center" src="assets/img/logo-white.png" width="160" height="170" alt="logo-white">
+<body class="container-flex-column vh100 main-background flexbox-container">
+  <!-- Star main section(choose-action)-->
+  <main>
+    <div class="container-fluid full">
+      <div class="row">
+        <div class="col-xs-12 ">
+          <img class="img-responsive logo " src="../assets/img/logo-pink.png" width="200" height="190" alt="logo-white">
+          <br>
+          <br>
+          <form>
+            <div class="form-group">
+              <label for="sel1">Select list (select one):</label>
+              <select class="form-control" id="sel1">
+                <option><span><img class="img-responsive logo" src="../assets/img/flags-icon/pe-icon.png" width="80" height="80" alt="peru-icon"></span>PE</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+              <br>
+            </div>
+          </form>
+        </div>
+        <div class="buttons-register justify-content-center">
+          <a href="../index.html" type="button" class="btn btn-light" id="login">Next</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End splash screen-->
+    </div>
+  </main>
+  <!-- End main section(choose-action)-->
 
-  <script src="vendors/js/jquery.js"></script>
-  <script src="js/app.js"></script>
+  <script src="../vendors/js/jquery.js"></script>
+  <script src="../js/choose-action.js"></script>
 </body>
 
 </html>
