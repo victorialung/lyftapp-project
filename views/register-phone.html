@@ -13,39 +13,57 @@
   <link rel="shortcut icon" href="../assets/img/favicon.png" />
 </head>
 
-<body class="container-flex-column vh100 main-background flexbox-container">
-  <!-- Star main section(choose-action)-->
-  <main>
-    <div class="container-fluid full">
-      <div class="row">
-        <div class="col-xs-12 ">
-          <img class="img-responsive logo " src="../assets/img/logo-pink.png" width="200" height="190" alt="logo-white">
-          <br>
-          <br>
-          <form>
-            <div class="form-group">
-              <label for="sel1">Select list (select one):</label>
-              <select class="form-control" id="sel1">
-                <option><span><img class="img-responsive logo" src="../assets/img/flags-icon/pe-icon.png" width="80" height="80" alt="peru-icon"></span>PE</option>
-                <option></option>
-                <option></option>
-                <option></option>
-              </select>
-              <br>
-            </div>
-          </form>
+<body class="loader-color">
+  <!-- Star section(register-phone)-->
+  <section>
+    <div class="container main-part-one ">
+      <div class="row ">
+        <div class="col-xs-6 justify-content-start pl-4">
+          <a href="choose-action.html" class="icon-white">
+            <i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+          </a>
         </div>
-        <div class="buttons-register justify-content-center">
-          <a href="../index.html" type="button" class="btn btn-light" id="login">Next</a>
+        <div class="col-xs-6 text-part">
+          <h4 class="text-center icon-white">Sign Up</h4>
+          <br>
+          <p class="icon-white text-size pl-4">Join now for the free ride credit</p>
+          <hr>
         </div>
       </div>
     </div>
-    </div>
-  </main>
-  <!-- End main section(choose-action)-->
+
+    <div class="container main-part-two">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="input-group pl-4">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Site
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img src="../assets/img/flags-icon/pe-icon.png" alt="peru-flag"></a></li>
+                <li><a class="dropdown-item" href="#"><img src="../assets/img/flags-icon/mx-icon.png" alt="mexico-flag"></a></li>
+                <li><a class="dropdown-item" href="#"><img src="../assets/img/flags-icon/cl-icon.png" alt="chile-flag"></a></li>
+                <li><a class="dropdown-item" href="#"><img src="../assets/img/flags-icon/br-con.png" alt="brasil-flag"></a></li>
+              </ul>
+            </div>
+            <span></span>
+            <input type="number" class="form-control" id="verified-phone" aria-label="..." value="" placeholder="000">
+          </div>
+        </div>
+      </div>
+      <div class="container pt-4 main-part-three">
+        <div class="row ">
+          <div class="col-xs-12">
+            <a href="verify-phone.html" type="button" class=" btn btn-default grey" id="next" disabled>NEXT</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End section(register-phone)-->
 
   <script src="../vendors/js/jquery.js"></script>
-  <script src="../js/choose-action.js"></script>
+  <script src="../js/register-phone.js"></script>
 </body>
 
 </html>

@@ -40,6 +40,33 @@
 }
 
 .btn-light {
+  border-radius: 8px;
   padding: .8rem;
   border-color: transparent !important;
+}
+
+
+/* Section register-phone */
+
+.btn-default {
+  border-radius: 4px;
+  padding: .6rem 8rem;
+  border-color: transparent !important;
+}
+
+.grey {
+  color: #7c7c7c;
+  background: #dfdfdf;
+}
+
+.icon-white {
+  color: white;
+}
+
+.text-part{
+  line-height: 70%;
+}
+
+.text-size{
+  font-size: .9em;
 }
