@@ -84,3 +84,16 @@
 .pt-7{
   padding-top: 6rem;
 }
+
+/* Section close */
+
+.position-rel{
+  position: relative;
+}
+
+.position-abs{
+  position: absolute;
+  top:14%;
+  right: 26%;
+  font-size: 9em;
+}
