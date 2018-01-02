@@ -31,25 +31,31 @@
         </div>
       </div>
     </div>
-
+    <br>
     <div class="container main-part-two">
       <div class="row">
         <div class="col-xs-6">
-          <div class="input-group pl-4">
+          <div class="input-group pl-5">
             <div class="input-group-btn">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Site
-              </button>
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"><img src="../assets/img/flags-icon/pe-icon.png" alt="peru-flag"></a></li>
-                <li><a class="dropdown-item" href="#"><img src="../assets/img/flags-icon/mx-icon.png" alt="mexico-flag"></a></li>
-                <li><a class="dropdown-item" href="#"><img src="../assets/img/flags-icon/cl-icon.png" alt="chile-flag"></a></li>
-                <li><a class="dropdown-item" href="#"><img src="../assets/img/flags-icon/br-con.png" alt="brasil-flag"></a></li>
+                <li>
+                  <!-- Agregamos el atributo data-country para poder llamarlo con jquery y poder darle funcionalidad -->
+                  <a class="dropdown-item" href="#">
+                    <img src="../assets/img/flags-icon/pe-icon.png" width="50" height="50" alt="peru-flag" data-country="+51">
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="../assets/img/flags-icon/mx-icon.png" width="50" height="50" alt="mexico-flag" data-country="+52">
+                  </a>
+                </li>
               </ul>
             </div>
             <span></span>
             <input type="number" class="form-control" id="verified-phone" aria-label="..." value="" placeholder="000">
           </div>
+          <p class="icon-white text-size pl-5">We'll send a text to verify ypur phone </p>
         </div>
       </div>
       <div class="container pt-4 main-part-three">
@@ -61,7 +67,7 @@
       </div>
   </section>
   <!-- End section(register-phone)-->
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="../vendors/js/jquery.js"></script>
   <script src="../js/register-phone.js"></script>
 </body>

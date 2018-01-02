@@ -70,3 +70,17 @@
 .text-size{
   font-size: .9em;
 }
+
+/* Section send-code */
+
+.pl-6{
+  padding: 0rem 3.8rem;
+}
+
+.pl-7{
+  padding: 0rem 6rem;
+}
+
+.pt-7{
+  padding-top: 6rem;
+}
