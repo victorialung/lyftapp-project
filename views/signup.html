@@ -6,29 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Lyft App</title>
-  <link rel="shortcut icon" href="assets/img/favicon.png" />
+  <link rel="shortcut icon" href="../assets/img/favicon.png" />
 </head>
 
-<body class=" container-flex-column vh100 loader-color flexbox-container">
-  <!-- Star splash screen-->
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 ">
-        <img class="img-responsive logo img-center" src="assets/img/logo-white.png" width="160" height="170" alt="logo-white">
+<body class="loader-color">
+  <!-- Star section(signup)-->
+  <section>
+    <div class="container main-part-one ">
+      <div class="row ">
+        <div class="col-xs-6 justify-content-start pl-4">
+          <a href="register-phone.html" class="icon-white">
+            <i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-xs-6 text-part">
+          <h4 class="text-center icon-white">Sign Up</h4>
+          <br>
+          <p class="icon-white text-size pl-4">Join now for the free ride credit</p>
+          <hr>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End splash screen-->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="vendors/js/jquery.js"></script>
-  <script src="js/app.js"></script>
+    <br>
+    <div class="container main-part-two">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </span>
+            <input class="form-control" type="text" placeholder="First Name">
+          </div>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </span>
+          <input class="form-control" type="password" placeholder="Email">
+        </div>
+      </div>
+    </div>
+    <div class="container pt-4 main-part-three">
+      <div class="row ">
+        <div class="col-xs-12">
+          <a href="close.html" type="button" class=" btn btn-default grey" id="next" disabled>NEXT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End section(signup)-->
+  <script src="../vendors/js/jquery.js"></script>
+  <script src="../js/signup.js"></script>
 </body>
 
 </html>
